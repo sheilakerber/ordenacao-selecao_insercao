@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página ordenação: seleção ou inserção</title>
+        <link rel="stylesheet" href="ordenacao.css">
+    </head>
+    <body>
+        <div>
+            <h1>Insira os valores a serem ordenados</h1>
+            <input type="number" id="valores">
+            <button onclick="enviarValores()">Enviar</button>
+            <button onclick="resetValores()">Reset</button>
+            <p id="sequenciaOriginal"></p>
+        </div>
+
+        <div>
+            <h1>Escolha o tipo de ordenação</h1>
+            <button onclick="ordenarSelecao()">Seleção</button>
+            <button onclick="ordenarInsercao()">Inserção</button>
+
+            <p id="resultadoHtml"></p>
+        </div>
+
+        <script src="ordenacao.js"></script>
+    </body>
+</html>
